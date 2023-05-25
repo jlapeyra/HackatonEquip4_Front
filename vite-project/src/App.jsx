@@ -4,6 +4,7 @@ import Country from './Countries/Country'
 import { Container } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
 import './App.css'
+import MapView from './Map/MapView';
 
 function App() {
   
@@ -14,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/country" element={<Country />} />
+            <Route path="/map" element={<MapView />} />
           </Routes>
         </Container>
        
